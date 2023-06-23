@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Temperature converter</title>	
+	
+	  <script src="temperature_conv.js"></script>
+	
+	
+</head>
+<body>
+  
+    <div class="padding" style="margin:10 -16px; text-align: center;">
+  <p style="margin-left:10px;margin-bottom:16px; text-align: center;"> Give any one temperature value to convert between temperature measurements:</p>
+  <div class="margin-top">
+    <label>Fahrenheit</label>
+    <input id="inputFahrenheit" class="border" type="number" min="-459.66999999999996" placeholder="Fahrenheit" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+  </div>
+  <div class="margin-top">
+    <label>Celsius</label>
+    <input id="inputCelsius" class="border" type="number" min="-273.15" placeholder="Celsius" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+  </div>
+  <div class="margin-top">
+    <label>Kelvin</label>
+    <input id="inputKelvin" class="border" type="number" min="0" placeholder="Kelvin" oninput="temperatureConverter(this.id,this.value)" onchange="temperatureConverter(this.id,this.value)">
+  </div>
+</div>
+   
+</body>
+</html>
